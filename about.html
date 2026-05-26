@@ -3,67 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Dr Laith Barnouti | FRACS Plastic Surgeon Sydney Australia</title>
-  <meta name="description" content="Learn about Dr Laith Barnouti — FRACS-qualified Specialist Plastic Surgeon in Sydney with 15+ years experience, international fellowships in Sweden, Brazil, Belgium and USA, and a Conjoint Senior Lecturer at UNSW." />
-  <meta name="keywords" content="Dr Laith Barnouti, about plastic surgeon Sydney, FRACS surgeon profile, reconstructive surgery Australia, UNSW surgeon lecturer, short scar surgery expert" />
-  <meta name="author" content="Dr Laith Barnouti" />
-  <meta property="og:title" content="About Dr Laith Barnouti | Specialist Plastic Surgeon Sydney" />
-  <meta property="og:description" content="Discover the distinguished career, global training, and patient-first philosophy of Dr Laith Barnouti — Sydney's leading FRACS plastic surgeon." />
-  <meta property="og:type" content="profile" />
-  <link class="canonical" href="https://www.drlaithbarnouti.com.au/about.html" />
-
+  <title>About Dr Laith Barnouti | Specialist Plastic Surgeon Sydney</title>
+  <meta name="description" content="Learn more about Dr Laith Barnouti (MBBS, FRACS Plast), a premier specialist plastic surgeon in Sydney with over 20 years of global clinical experience and advanced training fellowships." />
+  <meta name="keywords" content="Dr Laith Barnouti, plastic surgeon profile, FRACS qualification, plastic surgery training Sweden, UNSW conjoint lecturer, Sydney plastic surgery history" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --cream: #eef4f8;
-      --deep: #376B8C;
-      --gold: #376B8C;
-      --gold-light: #5a91b5;
-      --muted: #4a6b80;
-      --border: #c5dae8;
-      --white: #ffffff;
-      --section-gap: 100px;
-    }
-
+    /* ── BASE RESET & ODOO CORPORATE STYLING ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'Jost', sans-serif;
-      background: var(--cream);
-      color: var(--deep);
+      background: #eef4f8;
+      color: #376B8C;
       font-size: 17px;
-      line-height: 1.75;
+      line-height: 1.85;
       overflow-x: hidden;
     }
 
-    /* ── NAVBAR ── */
+    /* ── NAVIGATION ARCHITECTURE ── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
-      z-index: 100;
+      z-index: 1000;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 22px 60px;
-      background: rgba(247,244,239,0.92);
+      background: rgba(247,244,239,0.95);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid #c5dae8;
     }
-
     .nav-brand {
       font-family: 'Cormorant Garamond', serif;
       font-size: 20px;
       font-weight: 500;
-      color: var(--deep);
+      color: #376B8C;
       text-decoration: none;
       letter-spacing: 0.03em;
       line-height: 1.2;
     }
-
     .nav-brand span {
       display: block;
       font-family: 'Jost', sans-serif;
@@ -71,702 +52,271 @@
       font-weight: 400;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: #376B8C;
     }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: #4a6b80; text-decoration: none; }
+    .nav-links a:hover, .nav-links a[aria-current] { color: #376B8C; }
+    .nav-links .btn-nav { background: #376B8C; color: #eef4f8; padding: 10px 24px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .nav-links .btn-nav:hover { background: #5a91b5; color: #ffffff; }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 36px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.25s;
-    }
-
-    .nav-links a:hover, .nav-links a[aria-current] { color: var(--gold); }
-
-    .nav-links .btn-nav {
-      background: var(--deep);
-      color: var(--cream);
-      padding: 10px 24px;
-      letter-spacing: 0.12em;
-      transition: background 0.25s;
-    }
-
-    .nav-links .btn-nav:hover { background: var(--gold); color: var(--white); }
-
-    /* ── PAGE HERO ── */
+    /* ── COMPACT HERO FOR INNER PAGES ── */
     .page-hero {
-      padding-top: 86px;
-      background: var(--deep);
-      min-height: 420px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding-bottom: 70px;
+      padding-top: 180px;
+      padding-bottom: 90px;
+      background: #376B8C;
+      color: #eef4f8;
       padding-left: 60px;
       padding-right: 60px;
       position: relative;
-      overflow: hidden;
     }
-
-    .page-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse at 80% 30%, rgba(184,150,90,0.1) 0%, transparent 55%),
-        radial-gradient(ellipse at 15% 80%, rgba(184,150,90,0.06) 0%, transparent 45%);
-    }
-
-    .page-hero::after {
-      content: 'ABOUT';
-      position: absolute;
-      top: 50%;
-      right: -20px;
-      transform: translateY(-50%);
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 180px;
-      font-weight: 300;
-      color: rgba(255,255,255,0.025);
-      line-height: 1;
-      letter-spacing: 0.05em;
-      pointer-events: none;
-      user-select: none;
-    }
-
-    .page-hero-content { position: relative; z-index: 1; }
-
-    .breadcrumb {
-      font-size: 12px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: rgba(247,244,239,0.4);
-      margin-bottom: 24px;
-    }
-
-    .breadcrumb a {
-      color: rgba(247,244,239,0.4);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .breadcrumb a:hover { color: var(--gold); }
-
-    .breadcrumb span { margin: 0 10px; }
-
-    .page-hero h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(40px, 5.5vw, 72px);
-      font-weight: 300;
-      color: var(--cream);
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
-
-    .page-hero h1 em {
-      font-style: italic;
-      color: var(--gold-light);
-    }
-
-    .page-hero .hero-sub {
-      font-size: 16px;
-      color: rgba(247,244,239,0.6);
-      max-width: 600px;
-      line-height: 1.75;
-    }
-
-    /* ── PROFILE INTRO ── */
-    .profile-intro {
-      background: var(--white);
-      display: grid;
-      grid-template-columns: 380px 1fr;
-      gap: 0;
-    }
-
-    .profile-sidebar {
-      background: var(--cream);
-      padding: 60px 44px;
-      border-right: 1px solid var(--border);
-    }
-
-    .profile-card {
-      background: var(--deep);
-      padding: 44px 36px;
-      margin-bottom: 32px;
-    }
-
-    .profile-monogram {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 80px;
-      font-weight: 300;
-      color: rgba(184,150,90,0.2);
-      line-height: 1;
-      margin-bottom: 16px;
-    }
-
-    .profile-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 24px;
-      font-weight: 400;
-      color: var(--cream);
-      line-height: 1.2;
-      margin-bottom: 8px;
-    }
-
-    .profile-title {
-      font-size: 11px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--gold);
-      line-height: 1.6;
-    }
-
-    .sidebar-section { margin-bottom: 36px; }
-
-    .sidebar-label {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 14px;
-    }
-
-    .sidebar-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .sidebar-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      font-size: 14px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-
-    .sidebar-list li::before {
-      content: '—';
-      color: var(--gold);
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .sidebar-contact a {
-      display: block;
-      font-size: 14px;
-      color: var(--deep);
-      text-decoration: none;
-      line-height: 1.6;
-      transition: color 0.2s;
-    }
-
-    .sidebar-contact a:hover { color: var(--gold); }
-
-    .profile-main { padding: 70px 70px; }
-
-    .profile-main h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 38px;
-      font-weight: 300;
-      color: var(--deep);
-      margin-bottom: 28px;
-      line-height: 1.2;
-    }
-
-    .profile-main p {
-      font-size: 16.5px;
-      color: var(--muted);
-      line-height: 1.9;
-      margin-bottom: 22px;
-    }
-
-    .profile-main p strong {
-      color: var(--deep);
-      font-weight: 500;
-    }
-
-    .gold-divider {
-      width: 60px;
-      height: 2px;
-      background: var(--gold);
-      margin: 36px 0;
-    }
-
-    /* ── TIMELINE ── */
-    .timeline-section {
-      background: var(--cream);
-      padding: var(--section-gap) 60px;
-    }
-
-    .section-eyebrow {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 16px;
-    }
-
-    .section-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(34px, 4vw, 50px);
-      font-weight: 300;
-      color: var(--deep);
-      margin-bottom: 60px;
-      line-height: 1.15;
-    }
-
-    .timeline {
-      position: relative;
-      padding-left: 60px;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 14px;
-      top: 8px;
-      bottom: 0;
-      width: 1px;
-      background: var(--border);
-    }
-
-    .timeline-item {
-      position: relative;
-      padding-bottom: 52px;
-    }
-
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -53px;
-      top: 8px;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--gold);
-      border: 2px solid var(--cream);
-      box-shadow: 0 0 0 1px var(--gold);
-    }
-
-    .timeline-item:last-child { padding-bottom: 0; }
-
-    .timeline-year {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 8px;
-    }
-
-    .timeline-item h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 24px;
-      font-weight: 500;
-      color: var(--deep);
-      margin-bottom: 10px;
-      line-height: 1.3;
-    }
-
-    .timeline-item p {
-      font-size: 15px;
-      color: var(--muted);
-      line-height: 1.85;
-      max-width: 700px;
-    }
-
-    /* ── FELLOWSHIPS ── */
-    .fellowships-section {
-      background: var(--deep);
-      padding: var(--section-gap) 60px;
-    }
-
-    .fellowships-section .section-eyebrow { color: var(--gold); }
-    .fellowships-section .section-title { color: var(--cream); }
-
-    .fellowships-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2px;
-      margin-top: 0;
-    }
-
-    .fellowship-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(184,150,90,0.15);
-      padding: 44px 32px;
-      transition: background 0.3s, border-color 0.3s;
-    }
-
-    .fellowship-card:hover {
-      background: rgba(184,150,90,0.08);
-      border-color: rgba(184,150,90,0.35);
-    }
-
-    .fellowship-flag {
-      font-size: 32px;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .fellowship-country {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 12px;
-    }
-
-    .fellowship-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 22px;
-      font-weight: 400;
-      color: var(--cream);
-      margin-bottom: 14px;
-      line-height: 1.3;
-    }
-
-    .fellowship-card p {
-      font-size: 14px;
-      color: rgba(247,244,239,0.55);
-      line-height: 1.8;
-    }
-
-    /* ── PHILOSOPHY ── */
-    .philosophy-section {
-      background: var(--white);
-      padding: var(--section-gap) 60px;
-    }
-
-    .philosophy-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-    }
-
-    .philosophy-text h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 44px;
-      font-weight: 300;
-      color: var(--deep);
-      margin-bottom: 28px;
-      line-height: 1.15;
-    }
-
-    .philosophy-text p {
-      font-size: 16px;
-      color: var(--muted);
-      line-height: 1.9;
-      margin-bottom: 20px;
-    }
-
-    .philosophy-text p strong { color: var(--deep); font-weight: 500; }
-
-    .philosophy-pillars {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .pillar {
-      padding: 28px 32px;
-      border-left: 3px solid var(--gold);
-      background: var(--cream);
-    }
-
-    .pillar h4 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 20px;
-      font-weight: 500;
-      color: var(--deep);
-      margin-bottom: 8px;
-    }
-
-    .pillar p {
-      font-size: 14.5px;
-      color: var(--muted);
-      line-height: 1.75;
-    }
-
-    /* ── ACADEMIC SECTION ── */
-    .academic-section {
-      background: var(--cream);
-      padding: var(--section-gap) 60px;
-    }
-
-    .academic-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      margin-top: 60px;
-    }
-
-    .academic-block {
-      background: var(--white);
-      padding: 44px 40px;
-    }
-
-    .academic-block h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 28px;
-      font-weight: 400;
-      color: var(--deep);
-      margin-bottom: 12px;
-    }
-
-    .academic-block .block-tag {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 20px;
-    }
-
-    .academic-block p {
-      font-size: 15px;
-      color: var(--muted);
-      line-height: 1.85;
-    }
-
-    /* ── PATIENT APPROACH ── */
-    .approach-section {
-      background: var(--deep);
-      padding: var(--section-gap) 60px;
-    }
-
-    .approach-section .section-eyebrow { color: var(--gold); }
-    .approach-section .section-title { color: var(--cream); }
-
-    .approach-steps {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2px;
-      margin-top: 60px;
-    }
-
-    .approach-step {
-      background: rgba(255,255,255,0.03);
-      padding: 44px 32px;
-      position: relative;
-    }
-
-    .step-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 60px;
-      font-weight: 300;
-      color: rgba(184,150,90,0.18);
-      line-height: 1;
-      margin-bottom: 16px;
-    }
-
-    .approach-step h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 22px;
-      font-weight: 400;
-      color: var(--cream);
-      margin-bottom: 14px;
-      line-height: 1.3;
-    }
-
-    .approach-step p {
-      font-size: 14.5px;
-      color: rgba(247,244,239,0.5);
-      line-height: 1.8;
-    }
-
-    /* ── QUOTE ── */
-    .quote-band {
-      background: var(--gold);
-      padding: 90px 60px;
-      text-align: center;
-    }
-
-    .quote-band blockquote {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(26px, 3.5vw, 44px);
-      font-style: italic;
-      font-weight: 300;
-      color: var(--white);
-      max-width: 900px;
-      margin: 0 auto 24px;
-      line-height: 1.45;
-    }
-
-    .quote-band cite {
-      font-size: 12px;
-      font-style: normal;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.7);
-    }
-
-    /* ── CONTACT ── */
-    .contact-section {
-      background: var(--white);
-      padding: var(--section-gap) 60px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-    }
-
-    .contact-left h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 44px;
-      font-weight: 300;
-      color: var(--deep);
-      margin-bottom: 20px;
-      line-height: 1.15;
-    }
-
-    .contact-left p {
-      font-size: 16px;
-      color: var(--muted);
-      line-height: 1.85;
-      margin-bottom: 36px;
-    }
-
-    .contact-details { display: flex; flex-direction: column; gap: 24px; }
-
-    .contact-detail-label {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 6px;
-    }
-
-    .contact-detail a, .contact-detail span {
-      font-size: 16px;
-      color: var(--deep);
-      text-decoration: none;
-      display: block;
-      transition: color 0.2s;
-    }
-
-    .contact-detail a:hover { color: var(--gold); }
-
-    .contact-right {
-      background: var(--cream);
-      padding: 44px 40px;
-    }
-
-    .contact-right h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 28px;
-      font-weight: 300;
-      color: var(--deep);
-      margin-bottom: 28px;
-    }
-
-    .contact-right ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .contact-right li {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      font-size: 15px;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .contact-right li::before {
-      content: '✦';
-      color: var(--gold);
-      font-size: 9px;
-      flex-shrink: 0;
-      margin-top: 5px;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      background: var(--deep);
-      color: var(--cream);
-      padding: 15px 36px;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: background 0.25s, transform 0.2s;
-      margin-top: 8px;
-    }
-
-    .btn-primary:hover { background: var(--gold); transform: translateY(-2px); }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--deep);
-      border-top: 1px solid rgba(247,244,239,0.08);
-      padding: 40px 60px;
-    }
-
-    footer p {
-      font-size: 12px;
-      color: rgba(247,244,239,0.4);
-      letter-spacing: 0.08em;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 28px;
-    }
-
-    .footer-links a {
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(247,244,239,0.45);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .footer-links a:hover { color: var(--gold); }
-
-    /* ── FOOTER SOCIAL ── */
-    .footer-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding-bottom: 20px;
-    }
-
-    .footer-brand {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 18px;
-      font-weight: 400;
-      color: rgba(255,255,255,0.85);
-    }
-
-    .footer-brand span {
-      display: block;
-      font-family: 'Jost', sans-serif;
-      font-size: 10px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(255,255,
+    .breadcrumb { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(247,244,239,0.5); margin-bottom: 16px; }
+    .breadcrumb a { color: rgba(247,244,239,0.5); text-decoration: none; }
+    .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5.5vw, 70px); font-weight: 300; line-height: 1.2; }
+    .page-hero h1 em { font-style: italic; color: #5a91b5; }
+
+    /* ── MASTER GRID ASYMMETRIC LAYOUT ── */
+    .section-padding { padding: 120px 60px; }
+    .bg-white { background: #ffffff; }
+    .bg-light { background: #eef4f8; }
+    
+    .section-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #376B8C; margin-bottom: 18px; display: block; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 4.5vw, 54px); font-weight: 300; margin-bottom: 36px; color: #376B8C; line-height: 1.2; }
+
+    .asymmetric-container { display: grid; grid-template-columns: 360px 1fr; gap: 80px; max-width: 1200px; margin: 0 auto; align-items: start; }
+    
+    /* LEFT SIDEBAR PANEL */
+    .sticky-panel { background: #376B8C; color: #eef4f8; padding: 44px 36px; border: 1px solid rgba(255,255,255,0.1); }
+    .panel-monogram { font-family: 'Cormorant Garamond', serif; font-size: 54px; color: rgba(255,255,255,0.15); line-height: 1; margin-bottom: 14px; }
+    .panel-name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; margin-bottom: 6px; }
+    .panel-sub { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #5a91b5; margin-bottom: 30px; display: block; }
+    
+    .panel-group { margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; }
+    .panel-label { font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(247,244,239,0.6); margin-bottom: 12px; }
+    .panel-links-list { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: rgba(247,244,239,0.85); }
+    .panel-links-list li::before { content: '✦ '; color: #5a91b5; }
+
+    /* RIGHT CORE CONTENT */
+    .main-narrative p { font-size: 17px; color: #4a6b80; margin-bottom: 24px; text-align: justify; }
+    .main-narrative p strong { color: #376B8C; font-weight: 500; }
+    .text-divider { width: 80px; height: 1px; background: #c5dae8; margin: 40px 0; }
+
+    /* ── GLOBAL TIMELINE MATRIX ── */
+    .timeline-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; margin-top: 50px; }
+    .timeline-box { background: #ffffff; border: 1px solid #c5dae8; padding: 40px 30px; position: relative; }
+    .timeline-flag { font-size: 32px; display: block; margin-bottom: 14px; }
+    .timeline-box h4 { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: #376B8C; margin-bottom: 10px; font-weight: 500; }
+    .timeline-box p { font-size: 14.5px; color: #4a6b80; line-height: 1.7; }
+
+    /* ── EXPERT CREDENTIALS ROW ── */
+    .cred-row { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1200px; margin: 0 auto; margin-top: 60px; }
+    .cred-block h4 { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #376B8C; margin-bottom: 16px; font-weight: 400; }
+    .cred-block p { font-size: 15.5px; color: #4a6b80; margin-bottom: 16px; text-align: justify; }
+    
+    /* ── CONTACT GRID BLOCK ── */
+    .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; max-width: 1200px; margin: 0 auto; }
+    .contact-info h3 { font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 400; margin-bottom: 20px; color: #376B8C; }
+    .contact-info p { font-size: 16px; color: #4a6b80; margin-bottom: 30px; }
+    
+    .meta-details { display: flex; flex-direction: column; gap: 24px; }
+    .meta-block { border-left: 2px solid #376B8C; padding-left: 20px; }
+    .meta-label { font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #4a6b80; margin-bottom: 4px; }
+    .meta-val a, .meta-val span { font-size: 18px; color: #376B8C; text-decoration: none; font-weight: 500; }
+
+    .facility-box { background: #ffffff; padding: 50px 40px; border: 1px solid #c5dae8; }
+    .facility-box h4 { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #376B8C; margin-bottom: 14px; font-weight: 400; }
+    .facility-box p { font-size: 15px; color: #4a6b80; margin-bottom: 24px; }
+    .facility-list { list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 14.5px; color: #376B8C; font-weight: 500; }
+    .facility-list li::before { content: '✦ '; color: #5a91b5; }
+
+    /* ── FOOTER FRAMEWORK ── */
+    footer { background: #376B8C; border-top: 1px solid rgba(255,255,255,0.1); padding: 50px 60px; color: #eef4f8; }
+    .footer-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 20px; }
+    .footer-brand span { display: block; font-family: 'Jost', sans-serif; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 4px; }
+    .footer-links { display: flex; gap: 32px; }
+    .footer-links a { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: #ffffff; }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 30px; font-size: 12px; color: rgba(255,255,255,0.4); flex-wrap: wrap; gap: 15px; }
+
+    /* ── RESPONSIVE ADAPTATIONS ── */
+    @media (max-width: 1100px) {
+      .section-padding, nav, .page-hero, footer { padding-left: 24px; padding-right: 24px; }
+      .asymmetric-container, .timeline-grid, .cred-row, .contact-container { grid-template-columns: 1fr; gap: 40px; }
+    }
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-brand">
+      Dr Laith Barnouti
+      <span>Specialist Plastic Surgeon · Sydney</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="index.html#expertise">Expertise</a></li>
+      <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-hero">
+    <div style="max-width: 1200px; margin: 0 auto; width: 100%;">
+      <div class="breadcrumb"><a href="index.html">Home</a> › Professional Profile</div>
+      <h1>About <em>Dr Laith Barnouti</em></h1>
+    </div>
+  </header>
+
+  <section class="section-padding bg-white" aria-label="Surgeon Biography">
+    <div class="asymmetric-container">
+      
+      <aside class="sticky-panel">
+        <div class="panel-monogram">LB</div>
+        <h2 class="panel-name">Dr Laith Barnouti</h2>
+        <span class="panel-sub">MBBS, FRACS Plast</span>
+        
+        <div class="panel-group">
+          <div class="panel-label">Clinical Class</div>
+          <ul class="panel-links-list">
+            <li>Specialist Plastic Surgeon</li>
+            <li>Reconstructive Practitioner</li>
+            <li>Microsurgical Specialist</li>
+          </ul>
+        </div>
+
+        <div class="panel-group">
+          <div class="panel-label">Primary Adiliations</div>
+          <ul class="panel-links-list">
+            <li>Royal Australasian College</li>
+            <li>UNSW Medical Faculty</li>
+            <li>Sydney Plastic Surgery</li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-narrative">
+        <span class="section-eyebrow">The Medical Career</span>
+        <h3 class="section-title">A Legacy Grounded in Deep Surgical Competence</h3>
+        <p>
+          Dr Laith Barnouti (MBBS, FRACS Plast) serves as the primary medical mind and founder of **Sydney Plastic Surgery**. Over a distinguished career spanning **more than 20 years of active surgical operations**, Dr Barnouti has positioned himself as an authoritative figure in the complex fields of cosmetic, plastic, and reconstructive surgery within the Australian medical network. His practice architecture is designed from the ground up to prioritize absolute safety parameters, legal transparency, and unparalleled technical refinement.
+        </p>
+        <p>
+          Dr Barnouti's long journey into specialist medicine began with comprehensive clinical training layouts across multiple major tertiary teaching hospitals across Australia. His extensive operational history includes rigorous residencies and senior surgical roles at world-class institutions, including **St Vincent’s Hospital, Prince of Wales Hospital, Royal Prince Alfred Hospital, Royal Adelaide Hospital, and Westmead Hospital**. This wide exposure to complex trauma, soft-tissue reconstruction, and aesthetic transformations provided him with the profound deep-tissue fluency required to execute highly detailed procedures safely.
+        </p>
+        <div class="text-divider"></div>
+        <p>
+          As an active holder of the **FRACS (Plast) fellowship**, Dr Barnouti belongs to the highly competitive, elite tier of medical practitioners recognized directly by the Australian Medical Council as fully qualified specialists. This specific distinction separates his practice profile from general cosmetic doctors, offering patients complete peace of mind that their treatment plans are governed by the highest ethical standards, continuous peer review frameworks, and deep anatomical comprehension.
+        </p>
+        <p>
+          Beyond the operating theatre, Dr Barnouti balances his clinical layout with important academic contributions. He serves as a **Conjoint Lecturer at the University of New South Wales (UNSW)**, sharing multi-decade insights and evidence-based surgical methodologies with senior medical students. He is also widely recognized as an accessible public commentator, appearing frequently on major national television structures including SBS, Channel 7, Channel 9, Channel 10, and specialized medical documentation programs like *Embarrassing Bodies Down Under*, where he offers impartial expert analyses regarding modern surgical protection rules.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-padding bg-light" aria-labelledby="fellowship-heading">
+    <div style="max-width: 1200px; margin: 0 auto; margin-bottom: 40px;">
+      <span class="section-eyebrow">International Horizons</span>
+      <h2 class="section-title" id="fellowship-heading">Advanced Global Training & Sub-Specializations</h2>
+      <p style="color:#4a6b80; font-size:17px; max-width:850px;">True innovations require global perspective. Dr Barnouti has spent years working alongside the world’s most celebrated surgical architects to master specialized local innovations.</p>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="timeline-box">
+        <span class="timeline-flag">🇸🇪</span>
+        <h4>Sweden Fellowship</h4>
+        <p>Advanced focus on tissue structural dynamics, deep-layer facial integrity, and modern Scandinavian natural harmony principles.</p>
+      </div>
+      <div class="timeline-box">
+        <span class="timeline-flag">🇧🇷</span>
+        <h4>Brazil Fellowship</h4>
+        <p>Immersive focus in body contouring, complex liposculpture frameworks, and high-definition abdominal symmetry curves.</p>
+      </div>
+      <div class="timeline-box">
+        <span class="timeline-flag">🇧🇪</span>
+        <h4>Belgium Masterclass</h4>
+        <p>Specialized training focusing heavily on micro-vascular techniques and modern short-scar facial rejuvenation setups.</p>
+      </div>
+      <div class="timeline-box">
+        <span class="timeline-flag">🇺🇸</span>
+        <h4>United States Integration</h4>
+        <p>Collaborating within top-tier American aesthetic systems to integrate minimal incision system architectures and post-op protocols.</p>
+      </div>
+    </div>
+
+    <div class="cred-row">
+      <div class="cred-block">
+        <h4>Synthesizing Global Techniques</h4>
+        <p>By studying distinct clinical approaches across Europe, South America, and Asia, Dr Barnouti successfully created a unified surgical workflow. This integrated template combines the absolute technical discipline of Australian tertiary hospitals with the soft, elegant aesthetic eye characteristic of elite international cosmetic centers.</p>
+      </div>
+      <div class="cred-block">
+        <h4>Evidence-Based Philosophy</h4>
+        <p>Every international framework integrated into our Sydney facilities undergoes rigorous safety screening. We only adopt procedural steps that show clear, quantifiable proof of reducing patient downtime, lowering scar visibility indices, and increasing the absolute predictability of final healing milestones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white" id="contact" aria-labelledby="contact-heading">
+    <div class="contact-container">
+      
+      <div class="contact-info">
+        <span class="section-eyebrow">Consultation Booking Desk</span>
+        <h2 class="section-title" id="contact-heading">Begin Your Private Clinical Evaluation</h2>
+        <p>Our dedicated clinic management framework ensures full scheduling discretion, complete data compliance, and clear upfront guidance regarding pre-consultation medical histories.</p>
+        
+        <div class="meta-details">
+          <div class="meta-block">
+            <div class="meta-label">Direct Practice Line</div>
+            <div class="meta-val"><a href="tel:+61295610222">+61 2 9561 0222</a></div>
+          </div>
+          <div class="meta-block">
+            <div class="meta-label">Secure Email Desk</div>
+            <div class="meta-val"><a href="mailto:drbarnouti@australiaplasticsurgery.com.au">drbarnouti@australiaplasticsurgery.com.au</a></div>
+          </div>
+          <div class="meta-block">
+            <div class="meta-label">Primary Geographic Hub</div>
+            <div class="meta-val" style="font-size:17px; font-weight:500; color:#376B8C;">Sydney, New South Wales, Australia</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="facility-box">
+        <h4>Accredited Hospital Operations</h4>
+        <p>In accordance with Australian medical health protection guidelines, Dr Laith Barnouti does not perform major surgical procedures inside uncertified office setups. All intermediate and complex treatments are performed inside elite third-party private hospital facilities.</p>
+        <p>This institutional protection system guarantees full support structures including overnight hospital stay wards, highly advanced cardiac monitoring rigs, and certified medical nursing experts.</p>
+        <ul class="facility-list">
+          <li>Full Australian Health Practitioner Regulation Agency (AHPRA) Compliance</li>
+          <li>Independent Royal Australasian College of Surgeons (RACS) Guidelines</li>
+          <li>Comprehensive, multi-stage patient follow-up safety protocols</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-brand">
+        Dr Laith Barnouti
+        <span>Specialist Plastic & Reconstructive Surgeon</span>
+      </div>
+      <div class="footer-links" role="navigation" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2026 Dr Laith Barnouti | Powered by Odoo</p>
+      <p>FRACS Qualified Specialist Surgeon Practitioner</p>
+    </div>
+  </footer>
+
+</body>
+</html>
